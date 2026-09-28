@@ -8,7 +8,7 @@ SELECT
     ,supplier_id
     ,category_id
 --	,quantityperunit AS quantity_per_unit
-    ,unitprice::NUMERIC AS unit_price
+    ,unit_price::NUMERIC AS unit_price
 --	,unitsinstock::INT AS units_in_stock
 --	,unitsonorder::INT AS units_on_order
 --	,discontinued
