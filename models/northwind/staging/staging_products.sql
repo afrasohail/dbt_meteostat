@@ -1,12 +1,12 @@
 WITH source_data AS (
     SELECT *
-    FROM {{ source('northwind', 'products') }}
+    FROM {{ source('northwind_data', 'products') }}
 )
 SELECT
-    productid AS product_id
-    ,productname product_name
-    ,supplierid AS supplier_id
-    ,categoryid AS category_id
+    product_id
+    ,product_name
+    ,supplier_id
+    ,category_id
 --	,quantityperunit AS quantity_per_unit
     ,unitprice::NUMERIC AS unit_price
 --	,unitsinstock::INT AS units_in_stock
